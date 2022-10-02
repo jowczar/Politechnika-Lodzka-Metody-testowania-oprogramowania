@@ -17,4 +17,6 @@ test8
 rwrewrew #k fjdslkjfdl
 test9
 fjdlskjfldjflj #k rewrewrew
-test10
+tEst10
+some text #k text
+tEsT11

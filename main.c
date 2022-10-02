@@ -1,10 +1,15 @@
 #include <stdio.h>
 #include <string.h>
 
+void swap_case(char *param) {
+
+}
+
 int my_printf(char *format_string, char *param){
 	for(int i=0;i<strlen(format_string);i++){
 		if((format_string[i] == '#') && (format_string[i+1] == 'k')){
 			i++;
+			swap_case(param);
 			printf("%s",param);
 		}else
 			putchar(format_string[i]);
