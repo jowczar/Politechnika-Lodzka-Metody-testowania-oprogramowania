@@ -24,3 +24,5 @@ some text#k with k appended to word
 TEST12TEST
 some text ending with k: #k
 tesT13morecharacters
+#k
+tESt14HasOnlyParameter
