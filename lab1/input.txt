@@ -18,5 +18,9 @@ rwrewrew #k fjdslkjfdl
 test9
 fjdlskjfldjflj #k rewrewrew
 tEst10
-some text #k text
+some text #k normal
 tEsT11
+some text#k with k appended to word
+TEST12TEST
+some text ending with k: #k
+tesT13morecharacters

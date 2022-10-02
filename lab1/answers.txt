@@ -8,4 +8,6 @@ fjdslkfjdl TEST7 tttttt
 fjdlsjfkl TEST8 oooolll
 rwrewrew TEST9 fjdslkjfdl
 fjdlskjfldjflj TeST10 rewrewrew
-some text TeSt11 text
+some text TeSt11 normal
+some texttest12test with k appended to word
+some text ending with k: TESt13MORECHARACTERS
