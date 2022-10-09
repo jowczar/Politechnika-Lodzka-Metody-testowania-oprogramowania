@@ -74,7 +74,12 @@ int my_printf(char *format_string, char *param){
 			for (int j=0; j<length; j++) {
 				putchar(param[j]);
 			}
+
+			continue;
 		}
+		
+		// case after # we have some character other than k or .
+		putchar(format_string[i]);
 	}
 	puts("");
 	return 0;
