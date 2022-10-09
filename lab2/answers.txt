@@ -12,3 +12,13 @@ some text TeSt11 normal
 some texttest12test with k appended to word
 some text ending with k: TESt13MORECHARACTERS
 TesT14hASoNLYpARAMETER
+text ending with parameter specifier but nothing afterwards #
+text ending with parameter specifier but a space afterwards # 
+text ending with parameter specifier with a dot but nothing afterwards #.
+text ending with parameter specifier with a dot with number afterwards but not k #.5
+text ending with parameter specifier with a dot with character afterwards k #.p
+text ending with parameter specifier with a dot with k but without number specifier #.k
+text ending with parameter specifier with a dot with number specifier and k TEST21
+text with TEST parameter inside
+text with longer than parameter length TEST23
+text with shorter than parameter length T

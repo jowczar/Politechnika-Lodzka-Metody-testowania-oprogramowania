@@ -26,3 +26,23 @@ some text ending with k: #k
 tesT13morecharacters
 #k
 tESt14HasOnlyParameter
+text ending with parameter specifier but nothing afterwards #
+test15
+text ending with parameter specifier but a space afterwards # 
+test16
+text ending with parameter specifier with a dot but nothing afterwards #.
+test17
+text ending with parameter specifier with a dot with number afterwards but not k #.5
+test18
+text ending with parameter specifier with a dot with character afterwards k #.p
+test19
+text ending with parameter specifier with a dot with k but without number specifier #.k
+test20
+text ending with parameter specifier with a dot with number specifier and k #.6k
+test21
+text with #.4k parameter inside
+test22
+text with longer than parameter length #.40k
+test23
+text with shorter than parameter length #.1k
+test24
