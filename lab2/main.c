@@ -44,27 +44,27 @@ int my_printf(char *format_string, char *param){
 			}
 			
 			// find the next non-number character
-			int future_i = i + 2;
-			char test = format_string[future_i]; 
+			int next_i = i + 2;
+			char test = format_string[next_i]; 
 			int length = 0;
-			while (test >= '0' && test <= '9' && future_i < strlen(format_string)) {
-				future_i++;
-				test = format_string[future_i];
+			while (test >= '0' && test <= '9' && next_i < strlen(format_string)) {
+				next_i++;
+				test = format_string[next_i];
 				length = length * 10 + (test - '0');
 			}
 
 			// case we have length specifier but the number is not followed by k
 			if (test != 'k') {
 				// put all those chars here back
-				for (int j=i; j<future_i; j++) {
+				for (int j=i; j<next_i; j++) {
 					putchar(format_string[j]);
 				}
-				i += future_i;
+				i += next_i;
 				continue;
 			}
 			
 			// case we have length specifier and this number is followed by k (the correct case)
-			i += future_i;
+			i += next_i;
 			swap_case(param);
 			for (int j=0; j<length; j++) {
 				putchar(param[j]);
