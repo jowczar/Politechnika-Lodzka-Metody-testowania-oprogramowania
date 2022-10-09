@@ -64,3 +64,7 @@ parameter with special #.20k characters only
 []./!@#$^%&*()
 text with long length specifier #.100k with
 test33Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam viverra faucibus nisl, non pellentesque felis suscipit ut. Ut non nulla ac dui egestas mattis. Sed eu egestas dolor. Cras efficitur blandit dolor, vel mollis lectus dictum ac. Nam euismod metus sit amet lobortis vulputate. Vivamus quis facilisis orci. Quisque dignissim rhoncus magna sit amet fringilla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent sit amet eleifend turpis. Suspendisse odio arcu, molestie id mollis id, placerat sit amet ipsum. Morbi quis sem quam. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+text with incorrect character #.3ak between number and k
+test34
+text with incorrect character #.3a4k between number and k
+test35
