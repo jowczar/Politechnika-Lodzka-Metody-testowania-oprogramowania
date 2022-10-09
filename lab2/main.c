@@ -28,23 +28,18 @@ int my_printf(char *format_string, char *param){
 		}
 
 		// we have parameter specifier and length specifier 
-		// so we print the first n characters of the parameter
+		// so we try to print the first n characters of the parameter
 		if (format_string[i+1] == '.') {
 			
 			// case we have nothing after the length specifier
 			if (i+2 >= strlen(format_string)) {
-				putchar(format_string[i]); // #
-				putchar(format_string[i+1]); // .
-				i++;
+				putchar(format_string[i]);
 				continue;
 			}
 
 			// case next is some character other than a number
 			if (format_string[i+2] < '0' || format_string[i+2] > '9') {
-				putchar(format_string[i]); // #
-				putchar(format_string[i+1]); // .
-				putchar(format_string[i+2]); // some character that is not the number
-				i += 2;
+				putchar(format_string[i]);
 				continue;
 			}
 			
