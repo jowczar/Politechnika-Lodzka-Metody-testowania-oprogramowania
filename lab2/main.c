@@ -48,9 +48,10 @@ int my_printf(char *format_string, char *param){
 			char next_char = format_string[next_i]; 
 			int length = 0;
 			while (next_char >= '0' && next_char <= '9' && next_i <= strlen(format_string)) {
-				next_char = format_string[next_i];
 				length = (length * 10) + (next_char - '0');
+
 				next_i++;
+				next_char = format_string[next_i];
 			}
 
 			// case we have length specifier but the number is not followed by k
@@ -60,7 +61,7 @@ int my_printf(char *format_string, char *param){
 			}
 			
 			// case we have length specifier and this number is followed by k (the correct case)
-			i += next_i + 1; // also skip the k character
+			i = next_i;
 			swap_case(param);
 			for (int j=0; j<length; j++) {
 				if (j >= strlen(param)) break;

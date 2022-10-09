@@ -19,11 +19,11 @@ text ending with parameter specifier with a dot with number afterwards but not k
 text ending with parameter specifier with a dot with character afterwards k #.p
 text ending with parameter specifier with a dot with k but without number specifier #.k
 text ending with parameter specifier with a dot with number specifier and k TEST21
-text with TEST22nside
+text with TEST parameter inside
 text with longer than parameter length TEST23
-text with shorter than parameter length TEST24
-TEST25arameter in the beginning of text
-parameter with shortened length appended to a word hereTeSt26
+text with shorter than parameter length T
+TES parameter in the beginning of text
+parameter with shortened length appended to a word hereTeS something
 text with parameter specifier # and something afterwards
 text with parameter specifier # .5k but a space afterwards
 text with parameter specifier #. k but some character between . and k
