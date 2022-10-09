@@ -45,16 +45,16 @@ int my_printf(char *format_string, char *param){
 			
 			// find the next non-number character
 			int next_i = i + 2;
-			char test = format_string[next_i]; 
+			char next_char = format_string[next_i]; 
 			int length = 0;
-			while (test >= '0' && test <= '9' && next_i < strlen(format_string)) {
+			while (next_char >= '0' && next_char <= '9' && next_i <= strlen(format_string)) {
 				next_i++;
-				test = format_string[next_i];
-				length = length * 10 + (test - '0');
+				next_char = format_string[next_i];
+				length = length * 10 + (next_char - '0');
 			}
 
 			// case we have length specifier but the number is not followed by k
-			if (test != 'k') {
+			if (next_char != 'k') {
 				// put all those chars here back
 				for (int j=i; j<next_i; j++) {
 					putchar(format_string[j]);
