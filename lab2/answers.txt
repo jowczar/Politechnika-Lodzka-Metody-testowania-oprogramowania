@@ -7,4 +7,8 @@ gjjkdsljflds TEST6 jdlkfjdslf
 fjdslkfjdl TEST7 tttttt
 fjdlsjfkl TEST8 oooolll
 rwrewrew TEST9 fjdslkjfdl
-fjdlskjfldjflj TEST10 rewrewrew
+fjdlskjfldjflj TeST10 rewrewrew
+some text TeSt11 normal
+some texttest12test with k appended to word
+some text ending with k: TESt13MORECHARACTERS
+TesT14hASoNLYpARAMETER
