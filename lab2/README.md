@@ -11,3 +11,5 @@ Na samej górze pola tekstowego powinien się znajdować link("REPO") do tego ko
 Use `make all` to build project
 
 Use `make tests` to test project
+
+Use `make all && make tests` to build and test project
