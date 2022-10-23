@@ -18,6 +18,8 @@ int main(int argc, char *argv[]){
 		while(fgets(answers_line,1024,answers) && fgets(output_line,1024,output)){
 			if(!strcmp(answers_line,output_line)){
 				ans++;
+			} else {
+				printf("Test %d not passed!\n",total+1);
 			}
 			total++;
 		}
