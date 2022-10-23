@@ -81,8 +81,8 @@ test40
 text with no-dot parameter #200Z k with some other letter than k afterwards 
 test41
 text with no-dot parameter #200Zk with some other letter than k afterwards 
-test41
-text #2.k with incorrect order of dot and length
 test42
-#.k
+text #2.k with incorrect order of dot and length
 test43
+#.k
+test44
