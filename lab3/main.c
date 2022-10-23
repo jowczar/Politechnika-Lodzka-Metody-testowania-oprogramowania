@@ -77,7 +77,6 @@ int my_printf(char *format_string, char *param){
 		// case we have length specifier and this number is followed by k
 		i = next_i;
 		swap_case(param);
-		int chars_to_print = strlen(param) < length ? strlen(param) : length;
 
 		// case we have no dot and the length is bigger than the length of the parameter string – add x times space before the string
 		if (fill_string && length > strlen(param)) {
@@ -86,7 +85,9 @@ int my_printf(char *format_string, char *param){
 			}
 		}
 
+		int chars_to_print = fill_string ? strlen(param) : length; // we don't cut the string short if we don't have dot
 		for (int j=0; j<chars_to_print; j++) {
+			if (j >= strlen(param)) break;
 			putchar(param[j]);
 		}
 		
