@@ -38,3 +38,5 @@ text with               TEST37 parameter with length more than input text
 text with parameter specifier with a dot and k afterwards but without number case it is a sandwich
 text with parameter with length and nothing afterwards #2
 text with parameter with length with more than 1 digit                                                                                                                                                                                                   TEST40
+text with no-dot parameter #200Z k with some other letter than k afterwards 
+text with no-dot parameter #200Zk with some other letter than k afterwards 
