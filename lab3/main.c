@@ -12,10 +12,12 @@ void swap_case(char *param) {
 }
 
 int my_printf(char *format_string, char *param){
+	int fill_string = 0;
 	for(int i=0;i<strlen(format_string);i++){
 		// every other character that is not a parameter specifier
 		if (format_string[i] != '#') {
 			putchar(format_string[i]);
+			fill_string = 0;
 			continue;
 		}
 
@@ -27,36 +29,36 @@ int my_printf(char *format_string, char *param){
 			continue;
 		}
 
-		// TODO: this case will be out (we allow numbers here)
-		// case after # we have some character other than k or .
-		if (format_string[i+1] != '.') {
+		// case after # we have a dot
+		if (format_string[i+1] == '.') {
+			fill_string = 0;
+
+			// case after a dot next is parameter specifier (#.k) and no length number so we print nothing instead of param string
+			if (format_string[i+2] == 'k') {
+				i += 2;
+				continue;
+			}
+
+			// case next is some character other than a number
+			if (format_string[i+2] < '0' || format_string[i+2] > '9') {
+				putchar(format_string[i]);
+				continue;
+			}
+		} else if (format_string[i+1] >= '0' && format_string[i+1] <= '9') { // case after # we have a number
+			fill_string = 1;
+		} else { // case after # we have some character other than k or . or a number
 			putchar(format_string[i]);
 			continue;
 		}
-
-		// we have parameter specifier and length specifier 
-		// so we try to print the first n characters of the parameter
 		
 		// case we have nothing after the length specifier
 		if (i+2 >= strlen(format_string)) {
 			putchar(format_string[i]);
 			continue;
 		}
-
-		// case next is parameter specifier (#.k) and no length number so we print nothing instead of param string
-		if (format_string[i+2] == 'k') {
-			i += 2;
-			continue;
-		}
-
-		// case next is some character other than a number
-		if (format_string[i+2] < '0' || format_string[i+2] > '9') {
-			putchar(format_string[i]);
-			continue;
-		}
 		
 		// find the next non-number character
-		int next_i = i + 2; // #.[this character]
+		int next_i = fill_string ? i + 1 : i + 2; // #.[this character] or #[this character] in case of no-dot parameter
 		char next_char = format_string[next_i]; 
 		int length = 0;
 		while (next_char >= '0' && next_char <= '9' && next_i <= strlen(format_string)) {
@@ -72,11 +74,20 @@ int my_printf(char *format_string, char *param){
 			continue;
 		}
 		
-		// case we have length specifier and this number is followed by k (the correct case)
+		// case we have length specifier and this number is followed by k
 		i = next_i;
 		swap_case(param);
-		for (int j=0; j<length; j++) {
-			if (j >= strlen(param)) break;
+		int chars_to_print = strlen(param) < length ? strlen(param) : length;
+
+		// case we have length specifier and the length is bigger than the length of the parameter string
+		if (fill_string && length > strlen(param)) {
+			// add x times space before the string
+			for (int j=0; j<length-strlen(param); j++) {
+				putchar(' ');
+			}
+		}
+
+		for (int j=0; j<chars_to_print; j++) {
 			putchar(param[j]);
 		}
 		
