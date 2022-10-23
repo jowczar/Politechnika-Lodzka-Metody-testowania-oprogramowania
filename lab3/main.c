@@ -27,6 +27,7 @@ int my_printf(char *format_string, char *param){
 			continue;
 		}
 
+		// TODO: this case will be out (we allow numbers here)
 		// case after # we have some character other than k or .
 		if (format_string[i+1] != '.') {
 			putchar(format_string[i]);
@@ -39,6 +40,12 @@ int my_printf(char *format_string, char *param){
 		// case we have nothing after the length specifier
 		if (i+2 >= strlen(format_string)) {
 			putchar(format_string[i]);
+			continue;
+		}
+
+		// case next is parameter specifier (#.k) and no length number so we print nothing instead of param string
+		if (format_string[i+2] == 'k') {
+			i += 2;
 			continue;
 		}
 

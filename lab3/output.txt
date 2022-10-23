@@ -17,7 +17,7 @@ text ending with parameter specifier but a space afterwards #
 text ending with parameter specifier with a dot but nothing afterwards #.
 text ending with parameter specifier with a dot with number afterwards but not k #.5
 text ending with parameter specifier with a dot with character afterwards k #.p
-text ending with parameter specifier with a dot with k but without number specifier #.k
+text ending with parameter specifier with a dot with k but without number specifier 
 text ending with parameter specifier with a dot with number specifier and k TEST21
 text with TEST parameter inside
 text with longer than parameter length TEST23
@@ -28,10 +28,11 @@ text with parameter specifier # and something afterwards
 text with parameter specifier # .5k but a space afterwards
 text with parameter specifier #. k but some character between . and k
 text with parameter specifier #.4e with a dot and number afterwards but not k
-text with parameter specifier #.k with a dot and k afterwards but without number
+text with parameter specifier  with a dot and k afterwards but without number
 parameter with special []./!@#$^%&*() characters only
 text with long length specifier TEST33lOREM IPSUM DOLOR SIT AMET, CONSECTETUR ADIPISCING ELIT. eTIAM VIVERRA FAUCIBUS NISL, NON PELL with
 text with incorrect character #.3ak between number and k
 text with incorrect character #.3a4k between number and k
 text with #2k parameter with length less than input text
 text with #20k parameter with length more than input text
+text with parameter specifier with a dot and k afterwards but without number case it is a sandwich
