@@ -33,3 +33,5 @@ parameter with special []./!@#$^%&*() characters only
 text with long length specifier TEST33lOREM IPSUM DOLOR SIT AMET, CONSECTETUR ADIPISCING ELIT. eTIAM VIVERRA FAUCIBUS NISL, NON PELL with
 text with incorrect character #.3ak between number and k
 text with incorrect character #.3a4k between number and k
+text with #2k parameter with length less than input text
+text with #20k parameter with length more than input text

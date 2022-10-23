@@ -68,3 +68,7 @@ text with incorrect character #.3ak between number and k
 test34
 text with incorrect character #.3a4k between number and k
 test35
+text with #2k parameter with length less than input text
+test36
+text with #20k parameter with length more than input text
+test37
