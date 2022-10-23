@@ -40,3 +40,4 @@ text with parameter with length and nothing afterwards #2
 text with parameter with length with more than 1 digit                                                                                                                                                                                                   TEST40
 text with no-dot parameter #200Z k with some other letter than k afterwards 
 text with no-dot parameter #200Zk with some other letter than k afterwards 
+text #2.k with incorrect order of dot and length
