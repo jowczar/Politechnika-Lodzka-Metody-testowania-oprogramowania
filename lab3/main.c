@@ -79,9 +79,8 @@ int my_printf(char *format_string, char *param){
 		swap_case(param);
 		int chars_to_print = strlen(param) < length ? strlen(param) : length;
 
-		// case we have length specifier and the length is bigger than the length of the parameter string
+		// case we have no dot and the length is bigger than the length of the parameter string – add x times space before the string
 		if (fill_string && length > strlen(param)) {
-			// add x times space before the string
 			for (int j=0; j<length-strlen(param); j++) {
 				putchar(' ');
 			}
