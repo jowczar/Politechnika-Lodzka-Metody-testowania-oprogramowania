@@ -1,0 +1,70 @@
+totafsdfsf #k fdsfsdf
+test
+totafsd#k fdsfsdf fdfjs
+test2
+jfldjfldk # wynik
+test3
+fjdfsfds # k alal
+test4
+djfjkldsjf #k jjjjjj fsfjdljfdlsj flj ldfj
+test5
+gjjkdsljflds #k jdlkfjdslf
+test6
+fjdslkfjdl #k tttttt
+test7
+fjdlsjfkl #k oooolll
+test8
+rwrewrew #k fjdslkjfdl
+test9
+fjdlskjfldjflj #k rewrewrew
+tEst10
+some text #k normal
+tEsT11
+some text#k with k appended to word
+TEST12TEST
+some text ending with k: #k
+tesT13morecharacters
+#k
+tESt14HasOnlyParameter
+text ending with parameter specifier but nothing afterwards #
+test15
+text ending with parameter specifier but a space afterwards # 
+test16
+text ending with parameter specifier with a dot but nothing afterwards #.
+test17
+text ending with parameter specifier with a dot with number afterwards but not k #.5
+test18
+text ending with parameter specifier with a dot with character afterwards k #.p
+test19
+text ending with parameter specifier with a dot with k but without number specifier #.k
+test20
+text ending with parameter specifier with a dot with number specifier and k #.6k
+test21
+text with #.4k parameter inside
+test22
+text with longer than parameter length #.40k
+test23
+text with shorter than parameter length #.1k
+test24
+#.3k parameter in the beginning of text
+test25
+parameter with shortened length appended to a word here#.3k something
+tEsT26
+text with parameter specifier # and something afterwards
+test27
+text with parameter specifier # .5k but a space afterwards
+test28
+text with parameter specifier #. k but some character between . and k
+test29
+text with parameter specifier #.4e with a dot and number afterwards but not k
+test30
+text with parameter specifier #.k with a dot and k afterwards but without number
+test31
+parameter with special #.20k characters only
+[]./!@#$^%&*()
+text with long length specifier #.100k with
+test33Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam viverra faucibus nisl, non pellentesque felis suscipit ut. Ut non nulla ac dui egestas mattis. Sed eu egestas dolor. Cras efficitur blandit dolor, vel mollis lectus dictum ac. Nam euismod metus sit amet lobortis vulputate. Vivamus quis facilisis orci. Quisque dignissim rhoncus magna sit amet fringilla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent sit amet eleifend turpis. Suspendisse odio arcu, molestie id mollis id, placerat sit amet ipsum. Morbi quis sem quam. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+text with incorrect character #.3ak between number and k
+test34
+text with incorrect character #.3a4k between number and k
+test35
