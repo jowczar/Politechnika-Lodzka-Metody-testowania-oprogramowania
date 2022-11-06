@@ -16,3 +16,4 @@ text with negative number -54321
 range of integer in C 7463847412
 range of integer in C 6463847412 - 1
 Error
+0 zero

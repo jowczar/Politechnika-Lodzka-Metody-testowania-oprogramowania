@@ -34,3 +34,5 @@ range of integer in C #g - 1
 2147483646
 range of integer in C #g + 1
 2147483648
+#g zero
+0
