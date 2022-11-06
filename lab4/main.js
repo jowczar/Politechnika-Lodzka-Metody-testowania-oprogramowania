@@ -14,7 +14,7 @@ function check_g_param(param) {
 function handle_g_param(param) {
 	check_g_param(param);
 	
-	const hasSign = param.charAt(0) === '-';
+	const hasSign = Number(param) < 0;
 	const reversedNumber = Math.abs(param).toString().split("").reverse().join("");
 	process.stdout.write(`${hasSign ? '-' : ''}${reversedNumber}`);
 }
