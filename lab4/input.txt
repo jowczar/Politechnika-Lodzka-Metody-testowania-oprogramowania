@@ -18,3 +18,7 @@ text with #g parameter that prints two digits number reversed
 91
 text with #g parameter that prints number ending with zero reversed 10 as 01
 10
+text with #g parameter that prints number ending with multiple zeros reversed 1100000 as 0000011
+1100000
+text with #g parameter that prints number reversed 123456789 as 987654321
+123456789
