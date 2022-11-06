@@ -13,6 +13,6 @@ text with 987654321 parameter that prints number reversed 123456789 as 987654321
 4321
 Error
 text with negative number -4321
-range of integer in C 2147483647
-range of integer in C 2147483646 - 1
+range of integer in C 7463847412
+range of integer in C 6463847412 - 1
 Error

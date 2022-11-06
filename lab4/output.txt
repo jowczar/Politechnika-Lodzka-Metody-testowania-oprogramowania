@@ -11,5 +11,8 @@ text with 01 parameter that prints number ending with zero reversed 10 as 01
 text with 0000011 parameter that prints number ending with multiple zeros reversed 1100000 as 0000011
 text with 987654321 parameter that prints number reversed 123456789 as 987654321
 4321
-text with 987654321987654321987654321987654321987654321987654321987654321987654321987654321987654321987654321987654321987654321987654321987654321987654321987654321987654321987654321987654321 parameter that exceeds integer range
+Error
 text with negative number 54321-
+range of integer in C 7463847412
+range of integer in C 6463847412 - 1
+Error
