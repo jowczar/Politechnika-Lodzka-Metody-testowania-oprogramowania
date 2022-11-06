@@ -16,9 +16,9 @@ text with #g parameter that prints single digit number
 8
 text with #g parameter that prints two digits number reversed
 91
-text with #g parameter that prints number ending with zero reversed 10 as 01
+text with #g parameter that prints number ending with zero reversed 10 as 1
 10
-text with #g parameter that prints number ending with multiple zeros reversed 1100000 as 0000011
+text with #g parameter that prints number ending with multiple zeros reversed 1100000 as 11
 1100000
 text with #g parameter that prints number reversed 123456789 as 987654321
 123456789
@@ -44,3 +44,5 @@ negative maximum allowed number # g + 1 but incorrect structure of param
 -2147483648
 more than one #g param #g 
 -2147483645
+negative number #g ending with zeroes that reversed doesn't have them -10000 -> -1
+-10000

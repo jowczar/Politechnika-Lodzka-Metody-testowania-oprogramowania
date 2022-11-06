@@ -7,8 +7,8 @@ Error
 Error
 text with 8 parameter that prints single digit number
 text with 19 parameter that prints two digits number reversed
-text with 01 parameter that prints number ending with zero reversed 10 as 01
-text with 0000011 parameter that prints number ending with multiple zeros reversed 1100000 as 0000011
+text with 1 parameter that prints number ending with zero reversed 10 as 1
+text with 11 parameter that prints number ending with multiple zeros reversed 1100000 as 11
 text with 987654321 parameter that prints number reversed 123456789 as 987654321
 4321
 Error
@@ -21,3 +21,4 @@ negative maximum allowed number -7463847412
 Error
 negative maximum allowed number # g + 1 but incorrect structure of param
 more than one -5463847412 param -5463847412 
+negative number -1 ending with zeroes that reversed doesn't have them -10000 -> -1
