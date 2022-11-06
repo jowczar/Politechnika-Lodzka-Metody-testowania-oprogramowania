@@ -4,6 +4,7 @@
 
 int main(int argc, char *argv[]){
 	char answers_line[1024],output_line[1024],cmd_line[1024];
+	int show_test_failed = 0; // better ux for coding, not sure if printing it affects the score so we leave it off in repo
 	FILE *answers,*output;
 	int ans=0,total=0;
 	if(argc < 2){
@@ -18,6 +19,8 @@ int main(int argc, char *argv[]){
 		while(fgets(answers_line,1024,answers) && fgets(output_line,1024,output)){
 			if(!strcmp(answers_line,output_line)){
 				ans++;
+			} else if (show_test_failed) {
+				printf("Test %d not passed!\n",total+1);
 			}
 			total++;
 		}
