@@ -46,3 +46,11 @@ more than one #g param #g
 -2147483645
 negative number #g ending with zeroes that reversed doesn't have them -10000 -> -1
 -10000
+float number that's not going to be handled #g
+2.5
+negative float number that's not going to be handled #g
+-2.551023
+negative float number that's not going to be handled #g with comma
+-2,551023
+float number that's not going to be handled #g with comma
+2,5

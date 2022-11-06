@@ -22,3 +22,7 @@ Error
 negative maximum allowed number # g + 1 but incorrect structure of param
 more than one -5463847412 param -5463847412 
 negative number -1 ending with zeroes that reversed doesn't have them -10000 -> -1
+Error
+Error
+Error
+Error
