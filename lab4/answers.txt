@@ -17,3 +17,7 @@ range of integer in C 7463847412
 range of integer in C 6463847412 - 1
 Error
 0 zero
+negative maximum allowed number -7463847412
+Error
+negative maximum allowed number # g + 1 but incorrect structure of param
+more than one -5463847412 param -5463847412 

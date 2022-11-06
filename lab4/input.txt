@@ -36,3 +36,11 @@ range of integer in C #g + 1
 2147483648
 #g zero
 0
+negative maximum allowed number #g
+-2147483647
+negative maximum allowed number #g + 1
+-2147483648
+negative maximum allowed number # g + 1 but incorrect structure of param
+-2147483648
+more than one #g param #g 
+-2147483645
