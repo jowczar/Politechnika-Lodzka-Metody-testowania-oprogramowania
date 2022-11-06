@@ -20,7 +20,9 @@ function handle_g_param(param) {
 }
 
 function my_printf(format_string,param){
-	check_g_param(param);
+	if (format_string.indexOf('#g') !== -1) {
+		check_g_param(param);
+	}
 
 	for(var i=0;i<format_string.length;i++){
 		if((format_string.charAt(i) == '#') && (format_string.charAt(i+1) == 'g')){
