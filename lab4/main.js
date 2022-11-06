@@ -13,9 +13,10 @@ function check_g_param(param) {
 
 function handle_g_param(param) {
 	check_g_param(param);
-
-	const reversedNumber = param.toString().split("").reverse().join("");
-	process.stdout.write(reversedNumber);
+	
+	const hasSign = param.charAt(0) === '-';
+	const reversedNumber = Math.abs(param).toString().split("").reverse().join("");
+	process.stdout.write(`${hasSign ? '-' : ''}${reversedNumber}`);
 }
 
 function my_printf(format_string,param){
@@ -41,7 +42,7 @@ process.stdin.on('data', function(chunk) {
 		try {
 			my_printf(lines[i],lines[i+1])
 		} catch (err) {
-			// hide error and just print 'Error' instead so the C tester can handle it
+			// hide error and just print 'Error' instead so the primitive C tester can handle it
 			process.stdout.write("Error\n");
 		}
 		i++;
