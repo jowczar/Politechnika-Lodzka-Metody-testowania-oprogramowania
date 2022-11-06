@@ -5,11 +5,10 @@ process.stdin.setEncoding('utf8');
 var lingeringLine = "";
 
 function handle_g_param(param) {
+	// what if too big number for int?
+	
 	if (!Number(param)) {
-		// TODO; this is handled incorrectly, check how C handles this
-		console.log("Error: #g parameter is not a number");
-		// process.stdout.write(param);
-		return;
+		throw new Error(`Error: parameter ${param} is not a valid number`);
 	}
 
 	const reversedNumber = param.toString().split("").reverse().join("");
