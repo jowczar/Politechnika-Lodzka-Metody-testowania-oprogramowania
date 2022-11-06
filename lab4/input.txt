@@ -1,20 +1,20 @@
-totafsdfsf #k fdsfsdf
-test
-totafsd#k fdsfsdf fdfjs
-test2
-jfldjfldk # wynik
-test3
-fjdfsfds # k alal
-test4
-djfjkldsjf #k jjjjjj fsfjdljfdlsj flj ldfj
-test5
-gjjkdsljflds #k jdlkfjdslf
-test6
-fjdslkfjdl #k tttttt
-test7
-fjdlsjfkl #k oooolll
-test8
-rwrewrew #k fjdslkjfdl
-test9
-fjdlskjfldjflj #k rewrewrew
-test10
+text without g parameter
+1
+text with #g parameter
+2
+text with incorrect # g parameter
+3
+text with g parameter in the end #g
+4
+text with #g parameter but with text inside it
+asd5
+text with #g parameter but with only text inside it
+asd
+text with #g parameter but with digit inside text
+asd7asd
+text with #g parameter
+8
+text with #g parameter
+9
+text with #g parameter
+10
