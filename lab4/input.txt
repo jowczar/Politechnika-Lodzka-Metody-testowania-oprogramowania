@@ -12,9 +12,9 @@ text with #g parameter but with only text inside it
 asd
 text with #g parameter but with digit inside text
 asd7asd
-text with #g parameter
+text with #g parameter that prints single digit number
 8
-text with #g parameter
-9
-text with #g parameter
+text with #g parameter that prints two digits number reversed
+91
+text with #g parameter that prints number ending with zero reversed 10 as 01
 10
