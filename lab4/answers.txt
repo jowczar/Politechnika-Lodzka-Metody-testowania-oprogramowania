@@ -11,3 +11,5 @@ text with 01 parameter that prints number ending with zero reversed 10 as 01
 text with 0000011 parameter that prints number ending with multiple zeros reversed 1100000 as 0000011
 text with 987654321 parameter that prints number reversed 123456789 as 987654321
 4321
+Error
+text with negative number -4321

@@ -4,21 +4,22 @@ process.stdin.setEncoding('utf8');
 
 var lingeringLine = "";
 
-function handle_g_param(param) {
-	// what if too big number for int?
-
-	if (!Number(param)) {
-		throw new Error(`Error: parameter ${param} is not a valid number`);
+function check_g_param(param) {
+	const asNumber = Number(param);
+	if (!Number.isInteger(asNumber)) {
+		throw new Error(`Error: parameter ${param} is not a valid integer`);
 	}
+} 
+
+function handle_g_param(param) {
+	check_g_param(param);
 
 	const reversedNumber = param.toString().split("").reverse().join("");
 	process.stdout.write(reversedNumber);
 }
 
 function my_printf(format_string,param){
-	if (!Number(param)) {
-		throw new Error(`Error: parameter ${param} is not a valid number`);
-	}
+	check_g_param(param);
 
 	for(var i=0;i<format_string.length;i++){
 		if((format_string.charAt(i) == '#') && (format_string.charAt(i+1) == 'g')){
