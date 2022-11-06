@@ -7,11 +7,11 @@ text with incorrect # g parameter
 text with g parameter in the end #g
 4
 text with #g parameter but with text inside it
-asd5
+Error
 text with #g parameter but with only text inside it
-asd
+Error
 text with #g parameter but with digit inside text
-asd7asd
+Error
 text with #g parameter that prints single digit number
 8
 text with #g parameter that prints two digits number reversed
@@ -22,3 +22,5 @@ text with #g parameter that prints number ending with multiple zeros reversed 11
 1100000
 text with #g parameter that prints number reversed 123456789 as 987654321
 123456789
+#g
+1234

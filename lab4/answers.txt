@@ -2,11 +2,12 @@ text without g parameter
 text with 2 parameter
 text with incorrect # g parameter
 text with g parameter in the end 4
-text with asd5 parameter but with text inside it
-text with asd parameter but with only text inside it
-text with asd7asd parameter but with digit inside text
+Error
+Error
+Error
 text with 8 parameter that prints single digit number
 text with 19 parameter that prints two digits number reversed
 text with 01 parameter that prints number ending with zero reversed 10 as 01
 text with 0000011 parameter that prints number ending with multiple zeros reversed 1100000 as 0000011
 text with 987654321 parameter that prints number reversed 123456789 as 987654321
+4321
