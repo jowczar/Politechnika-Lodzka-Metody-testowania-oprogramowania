@@ -118,3 +118,5 @@ simple test #4g
 0000
 three params #g #10g #g
 1234
+three different params #10g #2g #010g #g
+0123

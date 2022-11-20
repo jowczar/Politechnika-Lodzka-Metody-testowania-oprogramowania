@@ -58,3 +58,4 @@ simple test 8888
 simple test 7777
 simple test 9999
 three params 4321       0123 4321
+three different params       9012 9012 0000009012 321
