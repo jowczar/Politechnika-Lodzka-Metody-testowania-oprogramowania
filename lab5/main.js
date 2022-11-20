@@ -26,6 +26,7 @@ function handle_x_g_param(param) {
 	const substractedNumber = Math.abs(param).toString().split("").map(c => {
 		const asNumber = Number(c);
 		if (asNumber == 0) return '9';
+		if (asNumber - 1 == 0) return '0';
 		return (asNumber - 1).toString();
 	}).join("");
 	return `${hasSign ? '-' : ''}${Number(substractedNumber)}`;
@@ -37,16 +38,19 @@ function my_printf(format_string,param){
 		format_string = format_string.replace(/#g/g, handle_g_param(param));
 	}
 
-	const numbers = format_string.match(/#\d+g/g);
-	if (numbers) {
+	const regexp = /#(\d+)g/g;
+	while ((match = regexp.exec(format_string)) !== null) {
 		check_g_param(param);
-		
-		const number = numbers[0];
-		const isLeadingZeros = number.split("")[0] === '0';
-		const leadingSpace = (isLeadingZeros ? '0' : ' ').repeat(param.length - number);
 
-		// TODO: this should check every parameter number and behave accordingly
-		format_string = format_string.replace(/#\d+g/g, leadingSpace + handle_x_g_param(param));
+		const wholePart = match[0];
+		const number = match[1];
+	
+		const isLeadingZeros = number.split("")[0] === '0';
+		const missingLength = Number(number) - param.length;
+		const leadingCharFiller = (isLeadingZeros ? '0' : ' ');
+		const leadingSpace = missingLength > 0 ? leadingCharFiller.repeat(missingLength) : '';
+
+		format_string = format_string.replaceAll(wholePart, leadingSpace + handle_x_g_param(param));
 	}
 
 	process.stdout.write(format_string + '\n');
