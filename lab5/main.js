@@ -23,7 +23,7 @@ function handle_x_g_param(param) {
 	check_g_param(param);
 
 	const hasSign = Number(param) < 0;
-	const substractedNumber = Math.abs(param).toString().split("").map(c => {
+	const substractedNumber = (hasSign ? Math.abs(param) : param).toString().split("").map(c => {
 		const asNumber = Number(c);
 		if (asNumber == 0) return '9';
 		return (asNumber - 1).toString();

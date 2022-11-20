@@ -39,22 +39,22 @@ text                                                                            
 text    0099999 parameter
 text 0123 parameter
 Error
-text with negative number     -01234
+text with negative number -01234
 range of integer in C 1036372536
 range of integer in C 1036372535 - 1
 Error
-         9 zero
+0000000009 zero
 negative maximum allowed number -1036372536
 Error
 more than one -5463847412 param -1036372534 end 
-text with negative number     -09999
+text with negative number -09999
 Error
 Error
 Error
 Error
 Error
 less length than param 0123
-simple test       8888
-simple test       7777
-simple test       9
+simple test 8888
+simple test 7777
+simple test 9999
 three params 4321       0123 4321
