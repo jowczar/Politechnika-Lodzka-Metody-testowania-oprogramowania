@@ -80,7 +80,7 @@ text #1g parameter
 1234
 text with #10g parameter that exceeds integer range
 123456789123456789123456789123456789123456789123456789123456789123456789123456789123456789123456789123456789123456789123456789123456789123456789123456789123456789123456789123456789
-text with negative number #10g
+text with negative number #6g
 -12345
 range of integer in C #10g
 2147483647
@@ -88,7 +88,7 @@ range of integer in C #5g - 1
 2147483646
 range of integer in C #10g + 1
 2147483648
-#10g zero
+#010g zero
 0
 negative maximum allowed number #3g
 -2147483647
@@ -96,7 +96,7 @@ negative maximum allowed number #10g + 1
 -2147483648
 more than one #g param #10g end 
 -2147483645
-text with negative number #10g
+text with negative number #2g
 -10000
 float number that's not going to be handled #10g
 2.5
@@ -110,11 +110,11 @@ text parameter #10g
 text
 less length than param #1g
 1234
-simple test #10g
+simple test #4g
 9999
-simple test #10g
+simple test #4g
 8888
-simple test #10g
+simple test #4g
 0000
 three params #g #10g #g
 1234
