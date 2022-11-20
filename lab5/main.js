@@ -38,19 +38,23 @@ function my_printf(format_string,param){
 		format_string = format_string.replace(/#g/g, handle_g_param(param));
 	}
 
-	const regexp = /#(\d+)g/g;
+	const regexp = /#-?(\d+)g/g;
 	while ((match = regexp.exec(format_string)) !== null) {
 		check_g_param(param);
 
 		const wholePart = match[0];
 		const number = match[1];
-	
+
+		const hasNegative = wholePart.indexOf('-') !== -1;
 		const isLeadingZeros = number.split("")[0] === '0';
 		const missingLength = Number(number) - param.length;
-		const leadingCharFiller = (isLeadingZeros ? '0' : ' ');
+		const leadingCharFiller = (isLeadingZeros && !hasNegative ? '0' : ' ');
 		const leadingSpace = missingLength > 0 ? leadingCharFiller.repeat(missingLength) : '';
+		
+		const shiftedNumber = handle_x_g_param(param);
+		const newString = hasNegative ? `${shiftedNumber}${leadingSpace}` : `${leadingSpace}${shiftedNumber}`;
 
-		format_string = format_string.replaceAll(wholePart, leadingSpace + handle_x_g_param(param));
+		format_string = format_string.replaceAll(wholePart, newString);
 	}
 
 	process.stdout.write(format_string + '\n');

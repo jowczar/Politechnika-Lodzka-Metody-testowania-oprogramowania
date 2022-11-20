@@ -61,3 +61,6 @@ three params 4321       0123 4321
 three different params       9012 9012 0000009012 321
 same params 901 0901 0901 901
 param with 0000s 00001
+param with - 012       end
+param with - 012       end
+param with - 012        end

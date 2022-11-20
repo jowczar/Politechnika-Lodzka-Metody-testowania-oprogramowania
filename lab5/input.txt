@@ -124,3 +124,9 @@ same params #2g #04g #04g #2g
 012
 param with 0000s #0005g
 12
+param with - #-9g end
+123
+param with - #-09g end
+123
+param with - #-10g end
+123
