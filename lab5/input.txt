@@ -108,3 +108,13 @@ float number that's not going to be handled #10g with comma
 2,5
 text parameter #10g
 text
+less length than param #1g
+1234
+simple test #10g
+9999
+simple test #10g
+8888
+simple test #10g
+0000
+three params #g #10g #g
+1234
