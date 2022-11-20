@@ -42,12 +42,9 @@ function my_printf(format_string,param){
 		check_g_param(param);
 		
 		const number = xGroups[0];
-		const leadingZeros = number.split("")[0] === '0';
+		const isLeadingZeros = number.split("")[0] === '0';
+		const leadingSpace = (isLeadingZeros ? '0' : ' ').repeat(param.length - number);
 
-		var leadingSpace = '';
-		if (param.length > number) {
-			leadingSpace = (leadingZeros ? '0' : ' ').repeat(param.length - number);
-		}
 		// TODO: this should check every parameter number and behave accordingly
 		format_string = format_string.replace(/#\d+g/g, leadingSpace + handle_x_g_param(param));
 	}
