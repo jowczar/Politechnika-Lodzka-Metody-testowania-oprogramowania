@@ -26,10 +26,9 @@ function handle_x_g_param(param) {
 	const substractedNumber = Math.abs(param).toString().split("").map(c => {
 		const asNumber = Number(c);
 		if (asNumber == 0) return '9';
-		if (asNumber - 1 == 0) return '0';
 		return (asNumber - 1).toString();
 	}).join("");
-	return `${hasSign ? '-' : ''}${Number(substractedNumber)}`;
+	return `${hasSign ? '-' : ''}${substractedNumber}`;
 }
 
 function my_printf(format_string,param){
