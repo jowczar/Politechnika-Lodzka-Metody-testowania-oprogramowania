@@ -19,7 +19,19 @@ function handle_g_param(param) {
 	return `${hasSign ? '-' : ''}${Number(reversedNumber)}`;
 }
 
+function handle_x_g_param(param) {
+	check_g_param(param);
 
+	const hasSign = Number(param) < 0;
+	const substractedNumber = Math.abs(param).toString().split("").map(c => {
+		const asNumber = Number(c);
+		if (asNumber == 0) {
+			return '9';
+		}
+
+		return (asNumber - 1).toString();
+	}).join("");
+	return `${hasSign ? '-' : ''}${Number(substractedNumber)}`;
 }
 
 function my_printf(format_string,param){
