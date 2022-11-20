@@ -28,6 +28,11 @@ function my_printf(format_string,param){
 		format_string = format_string.replace(/#g/g, handle_g_param(param));
 	}
 
+	if (format_string.match(/#\d+g/g)) {
+		check_g_param(param);
+	// 	format_string = format_string.replace(/\#x/g, handle_x_g_param(param));
+	}
+
 	process.stdout.write(format_string + '\n');
 }
 

@@ -26,3 +26,35 @@ Error
 Error
 Error
 Error
+text #0g parameter
+text #Xg parameter
+text #X0g parameter
+text #a0g parameter
+text #a0B parameter
+text #5g parameter
+text #05g parameter
+text #005g parameter
+text #10g parameter
+text #200g parameter
+text #10g parameter
+text #1g parameter
+Error
+text with negative number #10g
+range of integer in C #10g
+range of integer in C #5g - 1
+Error
+#10g zero
+negative maximum allowed number #3g
+Error
+more than one -5463847412 param #10g end 
+text with negative number #10g
+Error
+Error
+Error
+Error
+Error
+less length than param #1g
+simple test #10g
+simple test #10g
+simple test #10g
+three params 4321 #10g 4321
