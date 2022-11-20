@@ -25,7 +25,7 @@ function handle_g_param(param) {
 function my_printf(format_string,param){
 	if (format_string.indexOf('#g') !== -1) {
 		check_g_param(param);
-		format_string = format_string.replace(/\#g/g, handle_g_param(param));
+		format_string = format_string.replace(/#g/g, handle_g_param(param));
 	}
 
 	process.stdout.write(format_string + '\n');
