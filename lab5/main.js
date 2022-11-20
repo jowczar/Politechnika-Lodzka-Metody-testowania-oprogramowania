@@ -16,23 +16,19 @@ function handle_g_param(param) {
 	
 	const hasSign = Number(param) < 0;
 	const reversedNumber = Math.abs(param).toString().split("").reverse().join("");
-	process.stdout.write(`${hasSign ? '-' : ''}${Number(reversedNumber)}`);
+	return `${hasSign ? '-' : ''}${Number(reversedNumber)}`;
+}
+
+
 }
 
 function my_printf(format_string,param){
 	if (format_string.indexOf('#g') !== -1) {
 		check_g_param(param);
+		format_string = format_string.replace(/\#g/g, handle_g_param(param));
 	}
 
-	for(var i=0;i<format_string.length;i++){
-		if((format_string.charAt(i) == '#') && (format_string.charAt(i+1) == 'g')){
-			handle_g_param(param);
-			i++;
-		}else{
-			process.stdout.write(format_string.charAt(i));
-		}
-	}
-	console.log("");
+	process.stdout.write(format_string + '\n');
 }
 
 process.stdin.on('data', function(chunk) {
