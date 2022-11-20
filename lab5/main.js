@@ -37,11 +37,11 @@ function my_printf(format_string,param){
 		format_string = format_string.replace(/#g/g, handle_g_param(param));
 	}
 
-	const xGroups = format_string.match(/#\d+g/g);
-	if (xGroups) {
+	const numbers = format_string.match(/#\d+g/g);
+	if (numbers) {
 		check_g_param(param);
 		
-		const number = xGroups[0];
+		const number = numbers[0];
 		const isLeadingZeros = number.split("")[0] === '0';
 		const leadingSpace = (isLeadingZeros ? '0' : ' ').repeat(param.length - number);
 
