@@ -120,3 +120,5 @@ three params #g #10g #g
 1234
 three different params #10g #2g #010g #g
 0123
+same params #2g #04g #04g #2g
+012
