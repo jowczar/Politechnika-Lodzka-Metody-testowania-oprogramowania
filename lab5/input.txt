@@ -54,3 +54,57 @@ negative float number that's not going to be handled #g with comma
 -2,551023
 float number that's not going to be handled #g with comma
 2,5
+text #0g parameter
+1
+text #Xg parameter
+2
+text #X0g parameter
+3
+text #a0g parameter
+4
+text #a0B parameter
+5
+text #5g parameter
+6
+text #05g parameter
+7
+text #005g parameter
+8
+text #10g parameter
+91
+text #200g parameter
+10
+text #10g parameter
+1100000
+text #1g parameter
+1234
+text with #10g parameter that exceeds integer range
+123456789123456789123456789123456789123456789123456789123456789123456789123456789123456789123456789123456789123456789123456789123456789123456789123456789123456789123456789123456789
+text with negative number #10g
+-12345
+range of integer in C #10g
+2147483647
+range of integer in C #5g - 1
+2147483646
+range of integer in C #10g + 1
+2147483648
+#10g zero
+0
+negative maximum allowed number #3g
+-2147483647
+negative maximum allowed number #10g + 1
+-2147483648
+more than one #g param #10g end 
+-2147483645
+text with negative number #10g
+-10000
+float number that's not going to be handled #10g
+2.5
+negative float number that's not going to be handled #10g
+-2.551023
+negative float number that's not going to be handled #4g with comma
+-2,551023
+float number that's not going to be handled #10g with comma
+2,5
+text parameter #10g
+text
