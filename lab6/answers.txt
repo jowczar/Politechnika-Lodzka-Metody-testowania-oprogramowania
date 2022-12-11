@@ -70,7 +70,7 @@ with dot and digit – example from text 7843
 with digit less than param length 098
 with zero 0000000001
 with minus between # and dot 0000009876
-Error
-Error
+with minus between dot and digit #.-10g
+with minus between digit and g #.10-g
 with only dot and zero
 negative number and digit -00009876
