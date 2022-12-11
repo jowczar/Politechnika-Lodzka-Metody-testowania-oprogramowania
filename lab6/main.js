@@ -32,6 +32,18 @@ function handle_x_g_param(param) {
 	return `${hasSign ? '-' : ''}${substractedNumber}`;
 }
 
+function handle_dot_x_g_param(param) {
+	check_g_param(param);
+	
+	const hasSign = Number(param) < 0;
+	const withoutSign = hasSign ? param.slice(1) : param;
+	const substractedNumber = withoutSign.toString().split("").map(c => {
+		const asNumber = Number(c);
+		return (asNumber * 9 + 1) % 10;
+	}).join("");
+	return `${hasSign ? '-' : ''}${substractedNumber}`;
+}
+
 function my_printf(format_string,param){
 	if (format_string.indexOf('#g') !== -1) {
 		check_g_param(param);
@@ -53,6 +65,23 @@ function my_printf(format_string,param){
 		
 		const shiftedNumber = handle_x_g_param(param);
 		const newString = hasNegative ? `${shiftedNumber}${leadingSpace}` : `${leadingSpace}${shiftedNumber}`;
+
+		format_string = format_string.replaceAll(wholePart, newString);
+	}
+
+	const dotDigitGRegex = /#-?\.(\d+)g/g;
+	while ((match = dotDigitGRegex.exec(format_string)) !== null) {
+		check_g_param(param);
+
+		const wholePart = match[0];
+		const number = match[1];
+
+		const missingLength = Number(number) - param.length;
+		const leadingCharFiller = '0';
+		const leadingSpace = missingLength > 0 ? leadingCharFiller.repeat(missingLength) : '';
+		
+		const shiftedNumber = handle_dot_x_g_param(param);
+		const newString = `${leadingSpace}${shiftedNumber}`; // co z - 
 
 		format_string = format_string.replaceAll(wholePart, newString);
 	}
