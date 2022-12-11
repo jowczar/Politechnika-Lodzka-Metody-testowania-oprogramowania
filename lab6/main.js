@@ -69,7 +69,7 @@ function my_printf(format_string,param){
 		format_string = format_string.replaceAll(wholePart, newString);
 	}
 
-	const dotDigitGRegex = /#-?\.(\d+)g/g;
+	const dotDigitGRegex = /#-?\.(\d*)g/g;
 	while ((match = dotDigitGRegex.exec(format_string)) !== null) {
 		check_g_param(param);
 

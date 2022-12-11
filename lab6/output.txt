@@ -64,7 +64,7 @@ param with 0000s 00001
 param with - 012       end
 param with - 012       end
 param with - 012        end
-without digit but with dot #.g
+without digit but with dot 098
 with dot and digit 0000000098
 with dot and digit – example from text 7843
 with digit less than param length 098
@@ -72,5 +72,5 @@ with zero 0000000001
 with minus between # and dot 0000009876
 with minus between dot and digit #.-10g
 with minus between digit and g #.10-g
-with only dot and zer#.go 
+with only dot and zer1o 
 Error
