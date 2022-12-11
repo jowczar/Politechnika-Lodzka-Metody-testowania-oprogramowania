@@ -15,3 +15,5 @@ Use `make all` to build project
 Use `make tests` to test project
 
 Use `make all && make tests` to build and test project
+
+Use `make manual_test` to run manual test (you have to edit printf_manual_test.c to change command)
