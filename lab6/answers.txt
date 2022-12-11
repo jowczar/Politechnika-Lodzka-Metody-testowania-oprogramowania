@@ -68,9 +68,9 @@ without digit but with dot 098
 with dot and digit 0000000098
 with dot and digit – example from text 7843
 with digit less than param length 098
-with zeros 0000000000
-with minus between # and dot 0000012345
+with zero 0000000001
+with minus between # and dot 0000009876
 Error
 Error
 with only dot and zero
-negative number and digit -000012345
+negative number and digit -00009876
