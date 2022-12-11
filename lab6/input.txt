@@ -130,3 +130,23 @@ param with - #-09g end
 123
 param with - #-10g end
 123
+without digit but with dot #.g
+123
+with dot and digit #.10g
+123
+with dot and digit – example from text #.4g
+4378
+with digit less than param length #.2g
+123
+with zero #.10g
+0
+with minus between # and dot #-.10g
+12345
+with minus between dot and digit #.-10g
+12345
+with minus between digit and g #.10-g
+12345
+with only dot and zer#.go 
+0
+negative number and digit #.10g
+-12345
