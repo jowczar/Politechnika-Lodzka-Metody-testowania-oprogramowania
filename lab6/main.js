@@ -38,8 +38,8 @@ function my_printf(format_string,param){
 		format_string = format_string.replace(/#g/g, handle_g_param(param));
 	}
 
-	const regexp = /#-?(\d+)g/g;
-	while ((match = regexp.exec(format_string)) !== null) {
+	const digitGRegex = /#-?(\d+)g/g;
+	while ((match = digitGRegex.exec(format_string)) !== null) {
 		check_g_param(param);
 
 		const wholePart = match[0];
