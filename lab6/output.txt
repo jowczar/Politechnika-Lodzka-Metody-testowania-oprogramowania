@@ -73,4 +73,4 @@ with minus between # and dot 0000009876
 with minus between dot and digit #.-10g
 with minus between digit and g #.10-g
 with only dot and zer1o 
-Error
+negative number and digit -000009876

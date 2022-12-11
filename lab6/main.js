@@ -81,7 +81,9 @@ function my_printf(format_string,param){
 		const leadingSpace = missingLength > 0 ? leadingCharFiller.repeat(missingLength) : '';
 		
 		const shiftedNumber = handle_dot_x_g_param(param);
-		const newString = `${leadingSpace}${shiftedNumber}`;
+		const hasSign = Number(shiftedNumber) < 0;
+		const withoutSign = hasSign ? shiftedNumber.slice(1) : shiftedNumber;
+		const newString = `${hasSign ? '-' : ''}${leadingSpace}${withoutSign}`;
 
 		format_string = format_string.replaceAll(wholePart, newString);
 	}
