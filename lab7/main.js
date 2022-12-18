@@ -6,8 +6,8 @@ var lingeringLine = "";
 
 function check_j_param(param) {
 	const asNumber = Number(param);
-	if (!Number.isInteger(asNumber) || Math.abs(asNumber) > 2147483647) {
-		throw new Error(`Error: parameter ${param} is not a valid integer`);
+	if (!Number.isInteger(asNumber) || asNumber < 0 || asNumber > 4294967295) {
+		throw new Error(`Error: parameter ${param} is not a valid unsigned integer`);
 	}
 } 
 
