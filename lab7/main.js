@@ -11,9 +11,14 @@ function check_j_param(param) {
 	}
 } 
 
+function handle_j_param(param) {
+	return param;
+}
+
 function my_printf(format_string, param){
 	if (format_string.indexOf('#j') !== -1) {
 		check_j_param(param);
+		format_string = format_string.replace(/#j/g, handle_j_param(param));
 	}
 
 	process.stdout.write(format_string + '\n');
