@@ -1,21 +1,29 @@
 text without j parameter
-text with #j parameter
+text with 2 parameter
 text with incorrect # j parameter
-text with j parameter in the end #j
+text with j parameter in the end 4
 Error
 Error
 Error
-text with #j parameter that prints single digit number
-#j
+text with 8 parameter that prints single digit number
+4d2
 Error
 Error
-range of unsigned integer in C #j
-range of unsigned integer in C #j - 1
+range of unsigned integer in C ffffffff
+range of unsigned integer in C fffffffe - 1
 Error
-#j zero
+0 zero
 Error
-Error
-Error
-Error
+more than one 7ffffffd param 7ffffffd 
 Error
 Error
+Error
+Error
+test with single digit 5 -> 5
+test with 10 that should become G (A) -> a
+test with 11 that should become H (B) -> b
+test with 12 that should become I (C) -> c
+test with 13 that should become J (D) -> d
+test with 14 that should become K (E) -> e
+test with 15 that should become L (F) -> f
+test with 16 that should become 10 -> 10

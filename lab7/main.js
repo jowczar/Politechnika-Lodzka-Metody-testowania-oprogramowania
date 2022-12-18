@@ -12,7 +12,8 @@ function check_j_param(param) {
 } 
 
 function handle_j_param(param) {
-	let asHex = param.toString(16);
+	let asHex = Number(param)
+		.toString(16)
 	return asHex;
 }
 
