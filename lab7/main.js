@@ -12,7 +12,8 @@ function check_j_param(param) {
 } 
 
 function handle_j_param(param) {
-	return param;
+	let asHex = param.toString(16);
+	return asHex;
 }
 
 function my_printf(format_string, param){
