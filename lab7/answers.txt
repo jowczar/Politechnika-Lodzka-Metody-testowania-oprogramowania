@@ -19,3 +19,11 @@ Error
 Error
 Error
 Error
+test with single digit 5 -> 5
+test with 10 that should become G (A) -> g
+test with 11 that should become H (B) -> h
+test with 12 that should become I (C) -> i
+test with 13 that should become J (D) -> j
+test with 14 that should become K (E) -> k
+test with 15 that should become L (F) -> l
+test with 16 that should become 10 -> 10
