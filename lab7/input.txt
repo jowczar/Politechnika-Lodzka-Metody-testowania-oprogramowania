@@ -1,0 +1,152 @@
+text without g parameter
+1
+text with #g parameter
+2
+text with incorrect # g parameter
+3
+text with g parameter in the end #g
+4
+text with #g parameter but with text inside it
+Error
+text with #g parameter but with only text inside it
+Error
+text with #g parameter but with digit inside text
+Error
+text with #g parameter that prints single digit number
+8
+text with #g parameter that prints two digits number reversed
+91
+text with #g parameter that prints number ending with zero reversed 10 as 1
+10
+text with #g parameter that prints number ending with multiple zeros reversed 1100000 as 11
+1100000
+text with #g parameter that prints number reversed 123456789 as 987654321
+123456789
+#g
+1234
+text with #g parameter that exceeds integer range
+123456789123456789123456789123456789123456789123456789123456789123456789123456789123456789123456789123456789123456789123456789123456789123456789123456789123456789123456789123456789
+text with negative number #g
+-12345
+range of integer in C #g
+2147483647
+range of integer in C #g - 1
+2147483646
+range of integer in C #g + 1
+2147483648
+#g zero
+0
+negative maximum allowed number #g
+-2147483647
+negative maximum allowed number #g + 1
+-2147483648
+negative maximum allowed number # g + 1 but incorrect structure of param
+-2147483648
+more than one #g param #g 
+-2147483645
+negative number #g ending with zeroes that reversed doesn't have them -10000 -> -1
+-10000
+float number that's not going to be handled #g
+2.5
+negative float number that's not going to be handled #g
+-2.551023
+negative float number that's not going to be handled #g with comma
+-2,551023
+float number that's not going to be handled #g with comma
+2,5
+text #0g parameter
+1
+text #Xg parameter
+2
+text #X0g parameter
+3
+text #a0g parameter
+4
+text #a0B parameter
+5
+text #5g parameter
+6
+text #05g parameter
+7
+text #005g parameter
+8
+text #10g parameter
+91
+text #200g parameter
+10
+text #10g parameter
+1100000
+text #1g parameter
+1234
+text with #10g parameter that exceeds integer range
+123456789123456789123456789123456789123456789123456789123456789123456789123456789123456789123456789123456789123456789123456789123456789123456789123456789123456789123456789123456789
+text with negative number #6g
+-12345
+range of integer in C #10g
+2147483647
+range of integer in C #5g - 1
+2147483646
+range of integer in C #10g + 1
+2147483648
+#010g zero
+0
+negative maximum allowed number #3g
+-2147483647
+negative maximum allowed number #10g + 1
+-2147483648
+more than one #g param #10g end 
+-2147483645
+text with negative number #2g
+-10000
+float number that's not going to be handled #10g
+2.5
+negative float number that's not going to be handled #10g
+-2.551023
+negative float number that's not going to be handled #4g with comma
+-2,551023
+float number that's not going to be handled #10g with comma
+2,5
+text parameter #10g
+text
+less length than param #1g
+1234
+simple test #4g
+9999
+simple test #4g
+8888
+simple test #4g
+0000
+three params #g #10g #g
+1234
+three different params #10g #2g #010g #g
+0123
+same params #2g #04g #04g #2g
+012
+param with 0000s #0005g
+12
+param with - #-9g end
+123
+param with - #-09g end
+123
+param with - #-10g end
+123
+without digit but with dot #.g
+123
+with dot and digit #.10g
+123
+with dot and digit – example from text #.4g
+4378
+with digit less than param length #.2g
+123
+with zero #.10g
+0
+with minus between # and dot #-.10g
+12345
+with minus between dot and digit #.-10g
+12345
+with minus between digit and g #.10-g
+12345
+with only dot and zer#.go 
+0
+negative number and digit #.10g
+-12345
