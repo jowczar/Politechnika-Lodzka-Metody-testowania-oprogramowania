@@ -9,13 +9,11 @@ text with 8 parameter that prints single digit number
 4321
 Error
 text with negative number -54321
-range of integer in C 7463847412
-range of integer in C 6463847412 - 1
+range of unsigned integer in C 7463847412
+range of unsigned integer in C 6463847412 - 1
 Error
 0 zero
-negative maximum allowed number -7463847412
 Error
-negative maximum allowed number # j + 1 but incorrect structure of param
 more than one -5463847412 param -5463847412 
 Error
 Error
