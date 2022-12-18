@@ -1,15 +1,11 @@
-text without g parameter
+text without j parameter
 text with 2 parameter
-text with incorrect # g parameter
-text with g parameter in the end 4
+text with incorrect # j parameter
+text with j parameter in the end 4
 Error
 Error
 Error
 text with 8 parameter that prints single digit number
-text with 19 parameter that prints two digits number reversed
-text with 1 parameter that prints number ending with zero reversed 10 as 1
-text with 11 parameter that prints number ending with multiple zeros reversed 1100000 as 11
-text with 987654321 parameter that prints number reversed 123456789 as 987654321
 4321
 Error
 text with negative number -54321
@@ -19,58 +15,9 @@ Error
 0 zero
 negative maximum allowed number -7463847412
 Error
-negative maximum allowed number # g + 1 but incorrect structure of param
+negative maximum allowed number # j + 1 but incorrect structure of param
 more than one -5463847412 param -5463847412 
-negative number -1 ending with zeroes that reversed doesn't have them -10000 -> -1
 Error
 Error
 Error
 Error
-text 0 parameter
-text #Xg parameter
-text #X0g parameter
-text #a0g parameter
-text #a0B parameter
-text     5 parameter
-text 00006 parameter
-text 00007 parameter
-text         80 parameter
-text                                                                                                                                                                                                       09 parameter
-text    0099999 parameter
-text 0123 parameter
-Error
-text with negative number -01234
-range of integer in C 1036372536
-range of integer in C 1036372535 - 1
-Error
-0000000009 zero
-negative maximum allowed number -1036372536
-Error
-more than one -5463847412 param -1036372534 end 
-text with negative number -09999
-Error
-Error
-Error
-Error
-Error
-less length than param 0123
-simple test 8888
-simple test 7777
-simple test 9999
-three params 4321       0123 4321
-three different params       9012 9012 0000009012 321
-same params 901 0901 0901 901
-param with 0000s 00001
-param with - 012       end
-param with - 012       end
-param with - 012        end
-without digit but with dot 098
-with dot and digit 0000000098
-with dot and digit – example from text 7843
-with digit less than param length 098
-with zero 0000000001
-with minus between # and dot 0000009876
-with minus between dot and digit #.-10g
-with minus between digit and g #.10-g
-with only dot and zer1o 
-negative number and digit -000009876
