@@ -14,7 +14,7 @@ range of unsigned integer in C lllllllk - 1
 Error
 0 zero
 Error
-more than one 7llllllj param -7llllllj 
+more than one 7llllllj param 7llllllj 
 Error
 Error
 Error
