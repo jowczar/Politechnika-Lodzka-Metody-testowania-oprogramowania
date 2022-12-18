@@ -4,7 +4,18 @@ process.stdin.setEncoding('utf8');
 
 var lingeringLine = "";
 
+function check_j_param(param) {
+	const asNumber = Number(param);
+	if (!Number.isInteger(asNumber) || Math.abs(asNumber) > 2147483647) {
+		throw new Error(`Error: parameter ${param} is not a valid integer`);
+	}
+} 
+
 function my_printf(format_string, param){
+	if (format_string.indexOf('#j') !== -1) {
+		check_j_param(param);
+	}
+
 	process.stdout.write(format_string + '\n');
 }
 
