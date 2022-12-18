@@ -14,6 +14,12 @@ function check_j_param(param) {
 function handle_j_param(param) {
 	let asHex = Number(param)
 		.toString(16)
+		.replace(/a/gi, 'g')
+		.replace(/b/gi, 'h')
+		.replace(/c/gi, 'i')
+		.replace(/d/gi, 'j')
+		.replace(/e/gi, 'k')
+		.replace(/f/gi, 'l');
 	return asHex;
 }
 
