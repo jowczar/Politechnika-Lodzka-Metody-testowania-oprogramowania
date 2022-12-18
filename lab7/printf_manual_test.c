@@ -10,5 +10,10 @@ int main(void)
   printf("text with %x unsigned integer range + 1 prints overflows, it will be handled as Error\n",  4294967296);
   printf("===========================================\n");
   printf("text with %x normal\n", 12);
+  printf("text with %x normal\n", 1234);
+  printf("text with %x unsigned integer range\n", 4294967295);
+  printf("text with %x unsigned integer range + 1\n", 4294967294);
+  printf("text with %x zero\n", 0);
+  printf("text with %x normal\n", 2147483645);
   return 0;
 }

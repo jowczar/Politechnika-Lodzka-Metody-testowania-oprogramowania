@@ -31,7 +31,7 @@ range of unsigned integer in C #j + 1
 negative numbers are not allowed #j
 -2147483647
 more than one #j param #j 
--2147483645
+2147483645
 float number that's not going to be handled #j
 2.5
 negative float number that's not going to be handled #j

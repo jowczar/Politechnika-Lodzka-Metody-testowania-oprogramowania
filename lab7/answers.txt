@@ -6,15 +6,15 @@ Error
 Error
 Error
 text with 8 parameter that prints single digit number
-4321
+4j2
 Error
-text with negative number -54321
-range of unsigned integer in C 7463847412
-range of unsigned integer in C 6463847412 - 1
+Error
+range of unsigned integer in C llllllll
+range of unsigned integer in C lllllllk - 1
 Error
 0 zero
 Error
-more than one -5463847412 param -5463847412 
+more than one 7llllllj param -7llllllj 
 Error
 Error
 Error
