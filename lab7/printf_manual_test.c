@@ -15,5 +15,6 @@ int main(void)
   printf("text with %x unsigned integer range + 1\n", 4294967294);
   printf("text with %x zero\n", 0);
   printf("text with %x normal\n", 2147483645);
+  printf("text with %x in octal system (prefixed with 0 in C) will be treated as 10-based in this program\n", 010);
   return 0;
 }

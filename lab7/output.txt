@@ -27,3 +27,4 @@ test with 13 that should become J (D) -> j
 test with 14 that should become K (E) -> k
 test with 15 that should become L (F) -> l
 test with 16 that should become 10 -> 10
+test prefixed with 0 is treated as 10-based not octal-based number -> g

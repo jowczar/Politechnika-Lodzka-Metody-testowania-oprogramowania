@@ -56,3 +56,5 @@ test with 15 that should become L (F) -> #j
 15
 test with 16 that should become 10 -> #j
 16
+test prefixed with 0 is treated as 10-based not octal-based number -> #j
+010
