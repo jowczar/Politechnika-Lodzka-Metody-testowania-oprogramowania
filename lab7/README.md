@@ -1,6 +1,6 @@
 # Treść zadania
 
-Na wzór przykładu proszę przygotować implementację "printf" wykorzystująca #.Xg jako zamiennik %.Xd, który dodatkowo dla drukowanej liczby każdą cyfrę zamienia wg wzoru: (new_cyfra=(old_cyfra*9+1)%10) . Przykładowo dla 4378 drukuje 7843. Cyfrę 0 zamieniamy na 9.
+Na wzór przykładu proszę przygotować implementację "printf" wykorzystująca #j jako zamiennik %x, który dodatkowo dla drukowanej liczby szesnastkowej każdą cyfrę z przedziału a-f zamieni na przedział g-m.
 
 Proszę załączyć całość projektu spakowaną zipem. Równocześnie projekt musi się znajdować na githubie z odpowiednią nazwą katalogu (z tytułu zadania w nawiasach - ta część która jest w nawiasach z tytułu zadania(np "labX")). Przykładowo jeśli tytuł zadania to "Zadanie xyz (abc)" to proszę umieścić Makefile ( i resztę plików) w katalogu "abc". Państwa projekt powinien zawierać 10 testów i wszystkie testy powinny przechodzić poprawnie.
 
