@@ -14,3 +14,5 @@ test with 14 that should become K (E) -> k
 test with 15 that should become L (F) -> l
 test with 0 that should become o -> o
 test with 16 that should become 1o -> 1o
+test with param less than length of number 3oj4o
+test with param more than length of nubmer 0000i

@@ -30,3 +30,7 @@ test with 0 that should become o -> #.1j
 0
 test with 16 that should become 1o -> #.1j
 16
+test with param less than length of number #.1j
+200000
+test with param more than length of nubmer #.5j
+12
