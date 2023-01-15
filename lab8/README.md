@@ -1,6 +1,8 @@
 # Treść zadania
 
-Na wzór przykładu proszę przygotować implementację "printf" wykorzystująca #j jako zamiennik %x, który dodatkowo dla drukowanej liczby szesnastkowej każdą cyfrę z przedziału a-f zamieni na przedział g-m.
+Do realizacji tego zadania wystarczy maksymalnie 30 minut. Ze względów technicznych dopuszczalny czas to 45 minut.
+
+Na wzór przykładu proszę przygotować implementację "printf" wykorzystująca #.Zj jako zamiennik %.Zx (gdzie Z to liczba całkowita),  który dodatkowo dla drukowanej liczby szesnastkowej każdą cyfrę z przedziału a-f zamieni na przedział g-l: a -> g, b -> h, c -> i, d -> j, e->k, f-> l. Natomiast cyfra 0 jest zamieniana na literę o (0 -> o).
 
 Proszę załączyć całość projektu spakowaną zipem. Równocześnie projekt musi się znajdować na githubie z odpowiednią nazwą katalogu (z tytułu zadania w nawiasach - ta część która jest w nawiasach z tytułu zadania(np "labX")). Przykładowo jeśli tytuł zadania to "Zadanie xyz (abc)" to proszę umieścić Makefile ( i resztę plików) w katalogu "abc". Państwa projekt powinien zawierać 10 testów i wszystkie testy powinny przechodzić poprawnie.
 
