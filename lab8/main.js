@@ -12,7 +12,8 @@ function handle_j_param(param) {
 		.replace(/c/gi, 'i')
 		.replace(/d/gi, 'j')
 		.replace(/e/gi, 'k')
-		.replace(/f/gi, 'l');
+		.replace(/f/gi, 'l')
+		.replace(/0/gi, 'o');
 	return asHex;
 }
 
