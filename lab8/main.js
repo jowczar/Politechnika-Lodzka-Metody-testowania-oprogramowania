@@ -18,8 +18,18 @@ function handle_j_param(param) {
 }
 
 function my_printf(format_string, param){
-	if (format_string.indexOf('#j') !== -1) {
-		format_string = format_string.replace(/#j/g, handle_j_param(param));
+	const digitGRegex = /#.(\d+)j/g;
+	while ((match = digitGRegex.exec(format_string)) !== null) {
+		const wholePart = match[0];
+		const number = match[1];
+
+		const missingLength = Number(number) - Number(param).toString(16).length;
+		const leadingSpace = missingLength > 0 ? '0'.repeat(missingLength) : '';
+		
+		const transformedNumber = handle_j_param(param);
+		const newString = `${leadingSpace}${transformedNumber}`;
+
+		format_string = format_string.replaceAll(wholePart, newString);
 	}
 
 	process.stdout.write(format_string + '\n');
