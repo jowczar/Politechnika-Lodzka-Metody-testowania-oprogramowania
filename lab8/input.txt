@@ -1,60 +1,32 @@
 text without j parameter
 1
-text with #j parameter
+text with #.1j parameter
 2
-text with incorrect # j parameter
+text with incorrect # .1j parameter
 3
-text with j parameter in the end #j
+text with j parameter in the end #.1j
 4
-text with #j parameter but with text inside it
-12Text
-text with #j parameter but with only text inside it
-Sometext
-text with #j parameter but with digit inside text
-Some123Test
-text with #j parameter that prints single digit number
+text with #.1j parameter that prints single digit number
 8
-#j
+#.1j
 1234
-text with #j parameter that exceeds integer range
-123456789123456789123456789123456789123456789123456789123456789123456789123456789123456789123456789123456789123456789123456789123456789123456789123456789123456789123456789123456789
-text with negative number #j
--12345
-range of unsigned integer in C #j
-4294967295
-range of unsigned integer in C #j - 1
-4294967294
-range of unsigned integer in C #j + 1
-4294967296
-#j zero
-0
-negative numbers are not allowed #j
--2147483647
-more than one #j param #j 
+more than one #.1j param #.1j 
 2147483645
-float number that's not going to be handled #j
-2.5
-negative float number that's not going to be handled #j
--2.551023
-negative float number that's not going to be handled #j with comma
--2,551023
-float number that's not going to be handled #j with comma
-2,5
-test with single digit 5 -> #j
+test with single digit 5 -> #.1j
 5
-test with 10 that should become G (A) -> #j
+test with 10 that should become G (A) -> #.1j
 10
-test with 11 that should become H (B) -> #j
+test with 11 that should become H (B) -> #.1j
 11
-test with 12 that should become I (C) -> #j
+test with 12 that should become I (C) -> #.1j
 12
-test with 13 that should become J (D) -> #j
+test with 13 that should become J (D) -> #.1j
 13
-test with 14 that should become K (E) -> #j
+test with 14 that should become K (E) -> #.1j
 14
-test with 15 that should become L (F) -> #j
+test with 15 that should become L (F) -> #.1j
 15
-test with 16 that should become 10 -> #j
+test with 0 that should become o -> #.1j
+0
+test with 16 that should become 1o -> #.1j
 16
-test prefixed with 0 is treated as 10-based not octal-based number -> #j
-010
