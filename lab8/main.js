@@ -44,9 +44,7 @@ process.stdin.on('data', function(chunk) {
 		try {
 			my_printf(lines[i],lines[i+1])
 		} catch (err) {
-			// process.stdout.write(err.message);
-			// hide error and just print 'Error' instead so the primitive C tester can handle it
-			process.stdout.write("Error\n");
+			process.stdout.write(err.message);
 		}
 		i++;
 	}
